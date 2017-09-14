@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('DancingScript-Regular.otf');
+}
+@-webkit-keyframes body-animacion {
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+body{	
+	/* animacion */
+	animation-name: body-animacion;
+	animation-duration: 2s;		
+    /* estilo */
+	background: black;
+	font-family: 'Dancing Script';
+	margin-top: 0%;
+	width: 900px;	
+	margin: auto;	
+}
+header{
+	background: #5b7989;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	border-radius: 10px 10px 0 0;
+	padding: 0 2% 0 2%;	
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;	
+}	
+header>h1{
+	text-align: center;
+}
+#contenido{
+	background: #d5c75f;
+	padding: 1%;
+}
+img{
+	box-shadow: 2px 2px 0 0 #02010a;
+}
+#titulo >h1{
+	text-align-last: left;
+	width: 50%;
+}
+#menu-principal{
+	padding-bottom: 2%;
+	text-align: center;
+}
+#menu-principal > a{
+	padding: 10px 10px;
+	color: white;
+	text-shadow: none;
+	text-decoration: underline;
+}
+footer {
+	border-radius: 0 0 10px 10px;
+	background: #C6d5c5;
+	width: 100%
+}
+#pie p > img{
+	width: 20px;
+	box-shadow: none;
+	margin-right: 2%;
+	float: left;
+}
+#img1,#img2,#img3,#img4,#img5,#img6{
+	width: 30%;
+	height: 30%;
+	margin: 1%;
+}
+#img1{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+#img2, #img4, #img6{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#img3{
+	-webkit-filter: sepia(90%);
+ 	filter: sepia(90%);
+}
+/* ========== Responsive ==========*/
+
+@media (min-width: 900px){	
+	header{
+		display: flex;
+		flex-direction: row;
+		width: 96%;
+	}
+	#menu-principal{
+		padding-top: 3.5%;
+	}	
+	#contenido > div{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;		
+	}	
+	footer{
+		width: 98%;
+		display: flex;
+		flex-direction: column;		
+		padding-left: 2%;	
+	}
+	#pie{
+		display: inline-flex;
+		flex-direction: row;
+	}
+	#pie > div{
+		width: 25%;
+		margin: 1%;
+
+	}
+}
+@media (max-width: 899px) and (min-width: 500PX){	
+	body{
+		width: 95%;		
+	}	
+
+	#img1,#img2,#img3,#img4,#img5,#img6{
+		width: 45%;
+		margin: 2%;
+		text-align: center;
+	}
+	#contenido > div{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;		
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+	}
+	#pie{
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#pie > div{
+		width: 45%;
+		margin: 1%;
+	}
+}
+@media (max-width: 499px){	
+	body{
+		width: 95%;		
+	}	
+	#img1,#img2,#img3,#img4,#img5,#img6{
+		width: 90%;
+		margin: 2%;
+		text-align: center;
+	}
+	footer{
+		width: 98%;
+		display: flex;
+		flex-direction: column;
+		padding: 0 0 2% 2%;
+	}	
+}
