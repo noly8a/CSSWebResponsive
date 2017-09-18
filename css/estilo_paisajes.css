@@ -55,8 +55,8 @@ img{
 #menu-principal > a{
 	padding: 10px 10px;
 	color: white;
-	text-shadow: none;
-	text-decoration: underline;
+	text-shadow: 2px 2px #02010a;
+	text-decoration-line: none;
 }
 footer {
 	border-radius: 0 0 10px 10px;
